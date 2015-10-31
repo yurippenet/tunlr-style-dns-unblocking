@@ -14,6 +14,86 @@
   // *** PROXY CONFIGURATION STARTS HERE
   "proxies":[
     {
+      "catchall": true,
+      "dest_addr": "geo.api.qualaroo.com",
+      "enabled": true,
+      "modes": [
+        {
+          "mode": "http",
+          "port": 80
+        },
+        {
+          "mode": "https",
+          "port": 443
+        }
+      ],
+      "name": "qualaroo-geo-api"
+    },
+      {
+      "catchall": false,
+      "dest_addr": "www.viki.com",
+      "enabled": true,
+      "modes": [
+        {
+          "mode": "http",
+          "port": 80
+        },
+        {
+          "mode": "https",
+          "port": 443
+        }
+      ],
+      "name": "viki-www"
+    },
+	{
+      "catchall": false,
+      "dest_addr": "viki.com",
+      "enabled": true,
+      "modes": [
+        {
+          "mode": "http",
+          "port": 80
+        },
+        {
+          "mode": "https",
+          "port": 443
+        }
+      ],
+      "name": "viki"
+    },
+	{
+      "catchall": false,
+      "dest_addr": "0.viki.io",
+      "enabled": true,
+      "modes": [
+        {
+          "mode": "http",
+          "port": 80
+        },
+        {
+          "mode": "https",
+          "port": 443
+        }
+      ],
+      "name": "viki-io-0"
+    },
+	{
+      "catchall": false,
+      "dest_addr": "1.viki.io",
+      "enabled": true,
+      "modes": [
+        {
+          "mode": "http",
+          "port": 80
+        },
+        {
+          "mode": "https",
+          "port": 443
+        }
+      ],
+      "name": "viki-io.1"
+    },
+    {
       "name":"humble-bundle",
       "dest_addr":"www.humblebundle.com",
       "modes":[
